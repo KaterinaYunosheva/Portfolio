@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,42 +9,159 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 <body>
-    <header class="header"> 
+    <header class="header">
         <div class="container">
             <div class="header__row">
                 <div class="header__logo">
                     <img src="img/logo.svg" alt="">
-
                 </div>
                 <ul class="header__list">
                     <li>
-                        <a href="">
-                            Главная
+                        <a href="#first">
+                            ГЛАВНАЯ
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Обо мне
+                        <a href="#about">
+                            ОБО МНЕ
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Мои проекты
+                        <a href="#projects">
+                            МОИ ПРОЕКТЫ
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Контакты
+                        <a href="#contacts">
+                            КОНТАКТЫ
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div>            
         </div>
     </header>
-    <main></main>
-    <footer class="footer"></footer>
-</body>
+    <main>
+        <div id="first">
+        <section class="main">
+            <div class="container">
+                <div class="main__row">
+                    <div class="main__img">
+                        <img src="img/main.png" alt="">
+                    </div>
+                    <div class="main__content">
+                        <h1 class="main__title">
+                            Что вы можете узнать на этом сайте?
+                        </h1>
+                        <p class="main__txt">
+                            Привет, я, Юношева Катерина, FrontEnd разработчик. Здесь вы можете немного узнать обо мне и моих проектах, а также связаться со мной, если понадобится помощь.
+                        </p>
+                        <button class="main__btn">
+                            НАПИСАТЬ МНЕ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="about">
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">
+                    ОБО МНЕ
+                </h2>
+                <p class="about__txt">
+                    Начинающий FrontEnd разработчик. Учусь в Московском Техническом Университете Связи и Информатики на направлении Информатика и Вычислительная техника.
+                </p>
+                <div class="about__img">
+                    <img src="img/skills.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="prosto">
+            <div class="prosto__img">
+                <img src="img/Rectangle 13.png" alt="">
+            </div>
+        </section>
+        <section>
+            <div id="projects">
+            <section class="projects">
+                <div class="container">
+                    <h2 class="projects__title">
+                        МОИ ПРОЕКТЫ
+                    </h2>
+                    <p class="projects__txt">
+                        Скоро здесь появятся интересные проекты, а пока можете зайти на мой GitHub и увидеть мои первые шаги в сфере IT (´･ω･`)
+                    </p>
+                    <div class="projects__img">
+                        <a href="https://github.com/KaterinaYunosheva">
+                            <img src="img/git.png" alt="">
+                        </a>
+                    </div>                        
+                </div>
+            </section>
+        </section>
+        <section>
+            <div id="contacts">
+            <section class="contacts__form">
+                <div class="contacts">
+                    <h2 class="contacts__title">
+                        КОНТАКТЫ
+                    </h2>
+                    <p class="contacts__street">
+                        Москва, ул. Авиамоторная 8а
+                    </p>
+                    <p class="contacts__gmail">
+                        <ins>
+                            katerinayunosheva@gmail.com
+                        </ins>
+                    </p>
+                    <p class="contacts__number">
+                        +7 (906) 936-00-70
+                    </p>
+                    <ul class="contacts__img">
+                        <li>
+                            <a href="https://instagram.com/yunosheva__katerina">
+                                <img src="img/inst.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/katya.yunosheva">
+                                <img src="img/vk.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/kar_o_man">
+                                <img src="img/tg.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form">
+                    <h2 class="form__title">
+                        Хотите веб-сайт?
+                    </h2>
+                    <div class="data">
+                        <form action="mail.php" enctype="multipart/form-data" method="post" name="form">
+                            <input type="hidden" name="admin_email[]" value="katerinayunosheva@gmail.com">
+                            <input name="name" type="name" placeholder="Ваше имя" />
+                            <br>
+                            <input name="email" type="email" placeholder="Ваш e-mail" />
+                            <br>
+                            <textarea name="message" placeholder="Сообщение"></textarea>
+                            <br>
+                            <input type="submit" class="form__btn" value="ОТПРАВИТЬ" />
+                        </form>
+                    </div>
+                        
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__txt">
+            © 2022 Юношева Катерина    
+        </h3>
+    </footer>
+</body>    
 </html>
